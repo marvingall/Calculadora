@@ -1,0 +1,110 @@
+@import url("./imports.css");
+
+.light {
+  --bgColor: #fff;
+  --primaryColor: #fecc02;
+  --placeholderColor: rgba(0, 0, 0, 0.05);
+  --fundo: #e8e8e8;
+}
+
+.dark {
+  --bgColor: #121212;
+  --background-color: #121212;
+  --primaryColor: #fecc02;
+  --placeholderColor: rgba(199, 28, 28, 0.229);
+  --textColor: #fff;
+  --fundo: #3a3737;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--fundo);
+  height: 100vh;
+  padding: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.eachRowItem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftSide {
+  background-color: var(--bgColor);
+  border-radius: 2rem 0 0 2rem;
+}
+
+.leftSide>div:first-child {
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
+  min-width: 100%;
+}
+
+.title {
+  color: var(--primaryColor);
+}
+
+.leftside>div:last-child {
+  color: var(--textColor);
+}
+
+.rightSide {
+  background-color: var(--primaryColor);
+  border-radius: 0 2rem 2rem 0;
+}
+
+input {
+  border: none;
+  text-align: center;
+  font-size: 3rem;
+  max-width: 200px;
+  font-weight: 40vw;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--placeholderColor);
+}
+
+.resultText {
+  color: var(--textColor);
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+i {
+  color: var(--primaryColor);
+  background-color: var(--background-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#inputCalc {
+  background-color: var(--background-color);
+  color: var(--textColor);
+}
+
+.textPress {
+  color: var(--textColor);
+}
