@@ -71,6 +71,11 @@ body {
   border-radius: 0 2rem 2rem 0;
 }
 
+.rightSide>div:first-child {
+  height: 24px;
+  width: 100%;
+}
+
 input {
   border: none;
   text-align: center;
@@ -107,4 +112,21 @@ i {
 
 .textPress {
   color: var(--textColor);
+}
+
+div>i {
+  padding: 12px;
+  background-color: var(--placeholderColor);
+  border-radius: 40px;
+}
+
+#iconHistoric {
+  color: #fff;
+  font-size: 1.2re, ;
+  cursor: pointer;
+  background-color: #121212;
+}
+
+.historiClist {
+  display: none;
 }
