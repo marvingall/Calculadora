@@ -122,11 +122,16 @@ div>i {
 
 #iconHistoric {
   color: #fff;
-  font-size: 1.2re, ;
+  font-size: 1.2rem;
   cursor: pointer;
   background-color: #121212;
+
 }
 
 .historiClist {
   display: none;
+}
+
+#buttonThemeHistoric{
+  padding: 22px;
 }
